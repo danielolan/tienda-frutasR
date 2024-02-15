@@ -1,0 +1,26 @@
+{
+    "frutas": [
+      {
+        "id": 1,
+        "nombre": "Manzana",
+        "precio": 0.99,
+        "descripcion": "Una manzana jugosa y crujiente, perfecta para un snack saludable.",
+        "imagen": "/imagenes/manzana.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Banana",
+        "precio": 0.79,
+        "descripcion": "Rica en potasio, esta fruta suave es ideal para el desayuno o como postre.",
+        "imagen": "/imagenes/banana.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Naranja",
+        "precio": 0.89,
+        "descripcion": "Llena de vitamina C, perfecta para jugos o para comer en gajos.",
+        "imagen": "/imagenes/naranja.jpg"
+      }
+    ]
+  }
+  
