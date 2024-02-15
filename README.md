@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Proyecto Tienda de Frutas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una tienda en línea simple para una tienda de frutas. Permite a los usuarios iniciar sesión y ver una lista de frutas disponibles para la compra.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Inicio de sesión de usuario
+- Lista de frutas disponibles con imágenes
+- Diseño responsivo que se adapta a dispositivos móviles y de escritorio
 
-### `npm start`
+## Credenciales para Iniciar Sesión
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para acceder a la tienda, puedes utilizar las siguientes credenciales de usuario:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Usuario 1:**
+  - Usuario: `usuario1`
+  - Contraseña: `password1`
 
-### `npm test`
+- **Usuario 2:**
+  - Usuario: `usuario2`
+  - Contraseña: `password2`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Despliegue
 
-### `npm run build`
+El proyecto está desplegado y accesible en la siguiente URL: [Tienda de Frutas](https://eloquent-longma-10b5e8.netlify.app/login)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologías Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js
+- CSS3
+- Netlify para el despliegue
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación y Ejecución Local
 
-### `npm run eject`
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clona el repositorio en tu máquina local.
+2. Navega hasta la carpeta del proyecto desde tu terminal.
+3. Ejecuta `npm install` para instalar todas las dependencias necesarias.
+4. Una vez completada la instalación, ejecuta `npm start
