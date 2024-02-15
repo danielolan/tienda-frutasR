@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Login from "./login/Login";
+import ListaFrutas from "./frutas/ListaFrutas";
+
+
 
 function App() {
+  const [usuarioAutenticado, setUsuarioAutenticado] = useState(false);
+
+  const manejarAutenticacion = async (usuario, password) => {
+    try {
+      const respuesta = await fetch('/usuarios.json'); 
+      const datos = await respuesta.json();
+      const usuarioValido = datos.usuarios.some(u => u.usuario === usuario && u.password === password);
+      if (usuarioValido) {
+        setUsuarioAutenticado(true);
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+    } catch (error) {
+      console.error("Error al cargar los usuarios,", error);
+      alert("Error al cargar los usuarios.");
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/login"
+          element={
+            !usuarioAutenticado ? (
+              <Login onLogin={manejarAutenticacion} />
+            ) : (
+              <Navigate replace to="/frutas" />
+            )
+          }
+        />
+        <Route
+          path="/frutas"
+          element={
+            usuarioAutenticado ? (
+              <ListaFrutas />
+            ) : (
+              <Navigate replace to="/login" />
+            )
+          }
+        />
+        <Route path="*" element={<Navigate replace to="/login" />} />
+      </Routes>
+    </Router>
   );
 }
 
