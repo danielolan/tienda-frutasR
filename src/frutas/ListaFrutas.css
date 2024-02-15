@@ -1,0 +1,23 @@
+.lista-frutas {
+    padding: 20px;
+  }
+  
+  .lista-frutas h2 {
+    color: #333;
+  }
+  
+  .lista-frutas ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista-frutas li {
+    margin: 10px 0;
+    color: #666;
+  }
+  .lista-frutas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
