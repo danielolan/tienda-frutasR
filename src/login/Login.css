@@ -127,47 +127,114 @@ button:hover {
 }
 
 .login-container {
-  position: relative; /* Hace que el login-box se posicione relativo a este contenedor */
+  position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 .login-image {
   width: 100%;
   height: 100%;
-  position: absolute; /* Hace que la imagen cubra todo el contenedor */
-  z-index: 1; /* Asegura que la imagen quede detrás del formulario */
+  position: absolute; /* Posiciona la imagen de fondo absolutamente para que llene todo el contenedor */
+  z-index: -1; /* La imagen de fondo debe estar detrás del formulario */
+  object-fit: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
 
 .login-box {
-  position: absolute;
+  position: absolute; /* Posicionamiento absoluto para estar por encima de la imagen de fondo */
   right: 0;
-  width: 30%;
-  height: 100%;
-  z-index: 2;
+  width: 30%; /* El ancho inicial del formulario es 30% */
+  height: 100%; /* Altura para llenar toda la pantalla */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Este padding actuará como el "borde" transparente */
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.418); /* Fondo blanco translúcido */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.322); /* Fondo semitransparente inicial */
+  z-index: 2; /* Se asegura de que el formulario esté por encima de la imagen de fondo */
 }
 
-label {
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .login-box {
+    position: absolute; /* Mantiene el posicionamiento absoluto para estar por encima de la imagen de fondo */
+    width: 100%; /* El formulario ahora toma el 100% del ancho de la pantalla */
+    height: auto; /* La altura es automática para ajustarse al contenido */
+    background-color: #ffffff4b; /* Fondo opaco para que el formulario se destaque sobre la imagen de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+/* Estilos del formulario y sus elementos */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto; /* Centra el formulario horizontalmente */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.418);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #020202;
+}
+
+.input-group label {
   display: block;
-  margin-bottom: 2px;
-  font-weight: bold;
-}
-input[type="text"],
-input[type="password"] {
-  width: 90%;
-  height: 45px;
-  padding: 10px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para que los elementos se apilen verticalmente */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%; /* Asegura que los inputs usen el ancho disponible */
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+}

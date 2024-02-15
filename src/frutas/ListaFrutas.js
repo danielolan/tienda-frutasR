@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Fruta from './Fruta';
+import Header from './Header'; // Importa el componente Header
 import './ListaFrutas.css';
+import {fruits} from "../data/frutas"
 
 class ListaFrutas extends Component {
   constructor(props) {
     super(props);
     this.state = {
       frutas: []
+
     };
+    console.log(fruits)
   }
 
   componentDidMount() {
@@ -23,13 +27,22 @@ class ListaFrutas extends Component {
   }
 
   render() {
-    const { frutas } = this.state;
+    
     return (
-      <div className="lista-frutas">
-        {frutas.map(fruta => (
-          <Fruta key={fruta.id} nombre={fruta.nombre} precio={fruta.precio} />
-        ))}
-      </div>
+      <>
+        <Header /> {/* Encabezado añadido al principio */}
+        <div className="lista-frutas">
+          {fruits.map(fruta => (
+            <Fruta
+              key={fruta.id}
+              nombre={fruta.nombre}
+              precio={fruta.precio}
+              descripcion={fruta.descripcion}
+              imagen={fruta.imagen}
+            />
+          ))}
+        </div>
+      </>
     );
   }
 }
