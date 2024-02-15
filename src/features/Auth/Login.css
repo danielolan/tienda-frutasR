@@ -154,16 +154,16 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.322); /* Fondo semitransparente inicial */
-  z-index: 2; /* Se asegura de que el formulario esté por encima de la imagen de fondo */
+  background-color: rgba(255, 255, 255, 0.322); 
+  z-index: 2; 
 }
 
-/* Media Query para dispositivos móviles */
+
 @media (max-width: 768px) {
   .login-box {
-    position: absolute; /* Mantiene el posicionamiento absoluto para estar por encima de la imagen de fondo */
-    width: 100%; /* El formulario ahora toma el 100% del ancho de la pantalla */
-    height: auto; /* La altura es automática para ajustarse al contenido */
+    position: absolute; 
+    width: 100%; 
+    height: auto; 
     
     padding: 20px;
     border-radius: 10px;
@@ -171,11 +171,11 @@ button:hover {
   }
 
 
-/* Estilos del formulario y sus elementos */
+
 .login-form {
   width: 100%;
   max-width: 400px;
-  margin: auto; /* Centra el formulario horizontalmente */
+  margin: auto; 
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 40px;
   border-radius: 10px;
