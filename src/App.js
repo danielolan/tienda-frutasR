@@ -5,8 +5,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Login from "./login/Login";
-import ListaFrutas from "./frutas/ListaFrutas";
+import Login from "./features/Auth/Login";
+import ListaFrutas from "./features/Fruits/ListaFrutas";
 
 
 

@@ -1,13 +1,13 @@
-import apple from "../images/manzana.jpg"
-import banana from "../images/banano.jpg"
-import Naranja from "../images/Naranaj.jpg"
-import Fresa from "../images/fresas.jpg"
-import kiwi from "../images/kiwi.jpg"
-import Mango from "../images/mango.jpg"
-import pera from "../images/pera.jpg"
-import sandia from "../images/sandia.jpg"
-import uvas from "../images/uvas.jpg"
-import papaya from "../images/papaya.jpg"
+import apple from "../assets/images/manzana.jpg"
+import banana from "../assets/images/banano.jpg"
+import Naranja from "../assets/images/Naranaj.jpg"
+import Fresa from "../assets/images/fresas.jpg"
+import kiwi from "../assets/images/kiwi.jpg"
+import Mango from "../assets/images/mango.jpg"
+import pera from "../assets/images/pera.jpg"
+import sandia from "../assets/images/sandia.jpg"
+import uvas from "../assets/images/uvas.jpg"
+import papaya from "../assets/images/papaya.jpg"
 
 
 

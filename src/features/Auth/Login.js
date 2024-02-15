@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
-import bananaImage from './imagenes/frutas.jpg';
+import frutasImage from '../../assets/images/frutas.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'; // Importa la imagen correctamente
 
@@ -31,7 +31,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-image">
-        <img src={bananaImage} alt="Banano" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={frutasImage} alt="Fondo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
       <div className="login-box">
         <form onSubmit={handleSubmit} className="login-form">

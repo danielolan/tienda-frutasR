@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Fruta from './Fruta';
-import Header from './Header'; // Importa el componente Header
+import Header from '../../componets/Header/Header'; // Importa el componente Header
 import './ListaFrutas.css';
-import {fruits} from "../data/frutas"
+import {fruits} from "../../data/frutas"
 
 class ListaFrutas extends Component {
   constructor(props) {
