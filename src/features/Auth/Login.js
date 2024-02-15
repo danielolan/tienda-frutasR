@@ -7,8 +7,6 @@ import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'; // Importa l
 function Login({ onLogin }) {
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
-  const [usuarioValido, setUsuarioValido] = useState(true);
-  const [passwordValido, setPasswordValido] = useState(true);
 
   const validateInput = (input, setter) => {
     if (input.trim() === '') {
@@ -20,8 +18,8 @@ function Login({ onLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    validateInput(usuario, setUsuarioValido);
-    validateInput(password, setPasswordValido);
+    validateInput(usuario);
+    validateInput(password);
 
     if (usuario.trim() !== '' && password.trim() !== '') {
       onLogin(usuario, password); // Llama a la función de autenticación
