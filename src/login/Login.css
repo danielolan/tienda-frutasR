@@ -1,11 +1,5 @@
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5;
-}
 
+<<<<<<< Updated upstream
 .login-form {
   width: 100%;
   max-width: 400px;
@@ -52,6 +46,8 @@ h2 {
   padding: 15px; /* Espaciado interno para el texto dentro del input */
   margin: 0; /* margin: 0 auto no es necesario si usas flexbox en el contenedor */
 }
+=======
+>>>>>>> Stashed changes
 
 button {
   cursor: pointer;
@@ -71,3 +67,119 @@ button:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
+
+.leaf{
+  position: absolute;
+  width: 30px;
+  height:30px; 
+  background-color: #9ac23c00;
+  border-radius: 50%;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-10%);
+  }
+  100%{
+    transform: translateY(320%);
+  }
+}
+  .leaf:nth-child(1){
+    left:5%;
+   top: -5%;
+  animation-delay: 0.5s;
+  }
+  .leaf:nth-child(2){
+    left:25%;
+   top: -10%;
+  animation-delay: 2s;
+  }
+  .leaf:nth-child(3){
+    left:45%;
+   top: -15%;
+  animation-delay: 3.5s;
+  }
+  .leaf:nth-child(4){
+    left:65%;
+   top: -20%;
+  animation-delay: 1s;
+  }
+  .leaf:nth-child(5){
+    left:85%;
+   top: -25%;
+  animation-delay: 2.5s;
+  }
+  .leaf:nth-child(6){
+    left:95%;
+   top: -15%;
+  animation-delay: 2.5s;
+  }
+  .leaf:nth-child(7){
+    left:55%;
+   top: -15%;
+  animation-delay: 1.5s;
+  }
+  .leaf:nth-child(8){
+    left:20%;
+   top: -15%;
+  animation-delay: 1.0s;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ .login-image {
+  flex: 1; /* Ocupa 1/3 del espacio disponible, ajusta según necesidad */
+  background-image: url('URL_DE_TU_IMAGEN'); /* Asegúrate de reemplazar con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el contenedor llene la altura de la pantalla */
+}
+
+.login-image {
+  flex: 1; /* Ocupa 1/3 del espacio disponible, ajusta según necesidad */
+  background-image: url('/src/frutas/imagenes/banano.jpg'); /* Asegúrate de reemplazar con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box{
+  flex: 1; /* Ocupa el espacio restante, ajusta según necesidad */
+  max-width: 400px; /* Máximo ancho del formulario */
+  width: 100%; /* Asegura que el formulario use todo el ancho disponible dentro del contenedor */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.26); /* Ajusta la opacidad y color según necesidad */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajusta la sombra para un efecto suave */
+  text-align: center;
+}
+  label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+
+  }
+  input[type="text"],
+input[type="password"]{
+  width: 90%;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid rgb(255,255,255);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+  
+
+
