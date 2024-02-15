@@ -13,7 +13,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
-        <h2>Iniciar Sesión</h2>
+        <h2>INICIAR SESION</h2>
         <div className="input-group">
           <label htmlFor="usuario">Usuario</label>
           <input
