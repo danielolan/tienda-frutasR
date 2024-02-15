@@ -2,17 +2,17 @@
 .lista-frutas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: flex-start; /* Alinea los elementos al principio de la línea */
-  gap: 20px; /* Espacio entre los elementos */
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
   padding: 20px;
 }
 
-/* Ajustes adicionales para mejorar la presentación */
+
 .lista-frutas h2 {
   color: #333;
-  width: 100%; /* Asegura que el título abarque toda la línea */
-  text-align: center; /* Centra el título */
+  width: 100%; 
+  text-align: center; 
 }
 
 /* Fruta.css */
@@ -20,21 +20,39 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  margin: 0; /* Removido para utilizar gap en el contenedor padre */
+  margin: 0; 
   text-align: center;
-  width: calc(33.333% - 40px); /* Ajusta este valor según prefieras */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para profundidad */
+  width: calc(33.333% - 40px); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px; 
 }
 
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-  .fruta {
-    width: calc(50% - 40px); /* 2 columnas en vistas más estrechas */
+
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column; 
+  }
+
+  .login-image {
+    order: -1; 
+    width: 100%;
+    height: auto; 
+  }
+
+  .login-box {
+    width: 100%; 
+    padding: 20px; 
+    
+  }
+  .fruta{
+    width: 100%;
+
   }
 }
 
-@media (max-width: 480px) {
-  .fruta {
-    width: 100%; /* 1 columna en dispositivos móviles */
+
+@media (max-width: 768px) {
+  .login-image {
+    height: 100vh ; 
   }
 }

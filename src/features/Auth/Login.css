@@ -164,7 +164,7 @@ button:hover {
     position: absolute; /* Mantiene el posicionamiento absoluto para estar por encima de la imagen de fondo */
     width: 100%; /* El formulario ahora toma el 100% del ancho de la pantalla */
     height: auto; /* La altura es automática para ajustarse al contenido */
-    background-color: #ffffff4b; /* Fondo opaco para que el formulario se destaque sobre la imagen de fondo */
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
